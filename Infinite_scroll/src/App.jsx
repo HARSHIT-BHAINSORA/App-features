@@ -1,5 +1,7 @@
 import react from "react";
 
-const App = <h1>hi React</h1>;
+function App() {
+  return <h1>hi React</h1>;
+}
 
 export default App;
