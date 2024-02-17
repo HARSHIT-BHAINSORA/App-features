@@ -1,7 +1,20 @@
-import react from "react";
+import Body from "./Component/Body";
+import Navbar from "./Component/Navbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Orders from "./Component/Orders";
 
-function App() {
-  return <h1>hi React</h1>;
-}
+const App = () => {
+  return (
+    <div>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Body />}></Route>
+          <Route path="/orders" element={<Orders />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+};
 
 export default App;
